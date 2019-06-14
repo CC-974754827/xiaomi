@@ -1,0 +1,302 @@
+/* 字体 */
+body{
+    font: 14px "HanHei SC","PingFang SC","Avenir Next",Avenir,"Helvetica Neue",Helvetica,"Lantinghei SC","Hiragino Sans GB","Microsoft YaHei",微软雅黑,STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+/* 去除a标签虚边框 */
+body a:focus{
+    outline: none;
+}
+
+/* topbar 部分开始 */
+.topbar{
+    height: 40px;
+    background-color: #333;
+    font-size: 12px;
+}
+/* 居中class */
+.wrapper{
+    height: 40px;
+    /* background-color: #fff; */
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 行元素或文字在父元素中垂直居中 */
+.topbar-list{
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    float: left;
+}
+
+.topbar-list span{
+    margin: 0 2px;
+}
+.topbar-info{
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    float: right;
+}
+.topbar a{
+    color: #fff;
+}
+.topbar a:hover{
+    color: #ccc;
+}
+/* topbar 部分结束 */
+
+/* header 部分开始 */
+.header{
+    margin-top: 23px; 
+}
+.logo{
+    float: left;
+}
+.nav{
+    float: right;
+    font-size: 18px;
+}
+.nav > li{
+    float: left;
+    margin-left: 46px;
+    margin-top: 15px;
+    height: 45px;
+}
+.nav a{
+    color: #000;
+}
+.nav a:hover{
+    color: #e84519;
+}
+
+.nav-money{
+    position: relative;
+}
+.nav-financing{
+    width: 120px;
+    height: 100px;
+    border: 1px #ccc solid;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    top: 40px;
+    left: -45px;
+    font-size: 16px;
+    display: none;
+}
+/* 添加伪元素，方块 */
+.nav-financing::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-top: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    top: -6px;
+    left: 55px;
+    transform: rotate(45deg);
+}
+.nav-financing ul{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.nav-financing li{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.nav-financing li:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+/* 当鼠标滑过时找到所属的a，变色 */
+.nav-financing li:hover a{
+    color: #e84519;
+}
+.nav-money:hover .nav-financing{
+    display: block;
+}
+/* header 部分结束 */
+/* banner 部分开始 */
+.banner{
+    height: 640px;
+    background: url(../img/banner.jpg) center 0;
+    /* 设置背景图片位置 */
+    /* background-position: center; */
+    margin-top: 30px;
+}
+.banner h2{
+    color: #fff;
+    font-size: 54px;
+    /* 字体粗细 默认400，h2大于400 */
+    font-weight: 300;
+    text-align: center;
+    padding-top: 193px; 
+}
+.download{
+    /* 行元素居中 */
+    text-align: center;
+}
+/* 行元素不能设置宽高,display:inline-block */
+.download a{
+    color: #fff;
+    font-size: 24px;
+    background: #F93F2B;
+    width: 260px;
+    height: 60px;
+    display: inline-block;
+    border-radius: 5px;
+    line-height: 60px;
+    margin-top: 30px;
+}
+/* banner 部分结束 */
+/* content 部分开始 */
+.content{
+    height: 452px;
+    border: 1px solid #eee;
+    margin-top: -80px;
+    background-color: #fff;
+    padding: 30px;
+}
+.list{
+    width: 360px;
+    float: left;
+    margin-left: 35px;
+}
+.list-one{
+    background: url(../img/orange.png) center;
+    height: 180px;
+    color: #fff;
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list-two{
+    background: url(../img/blue.png) center;
+    height: 180px;
+    color: #fff;
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list-three{
+    background: url(../img/green.png) center;
+    height: 180px;
+    color: #fff;
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.list h2,p{
+    padding-top: 30px;
+}
+.list h2{
+    font-size: 33px;
+}
+.list p{
+    font-size: 33px;
+    font-weight: 300;
+}
+.list li{
+    float: left;
+    padding: 5px;
+}
+.list li p{
+    font-size: 16px;
+    color: #666;
+    float: left;
+    padding-right: 7px;
+}
+.list li .first{
+    color: #F93F2B;
+}
+.list-news{
+    margin: 20px;
+}
+.more{
+    color: #FD3911;
+    font-size: 16px;
+    width: 300px;
+    height: 62px;
+    line-height: 62px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    margin-top: 25px;    
+}
+/* content 部分结束 */
+/* footer 部分开始 */
+.footer{
+    margin: 100px auto;
+}
+.footer .leftPart img{
+    width: 46px;
+}
+.footer .leftPart ul{
+    color: #666;
+    margin-top: -48px;
+    padding-left: 60px;
+}
+.footer .rightPart{
+    float: right;
+}
+.footer .rightPart ul{
+    color: #666;
+    margin-top: -48px;
+}
+.footer .rightPart li:nth-child(1){
+    font-size: 14px;
+}
+.footer .rightPart li:nth-child(2){
+    font-size: 26px;
+    color: #F93F2B;
+}
+.footer .rightPart li:nth-child(3){
+    font-size: 12px;
+}
+/* footer 部分结束 */
+/* downloadLogo 部分开始 */
+.downloadLogo{
+    background-color: rgba(128, 138, 135, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+.downloadLogo .app{
+    background: #fff;
+    width: 460px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 5px;
+}
+.downloadLogo .app p:nth-child(1){
+    font-size: 24px;
+    color: #333;
+    padding: 25px;
+}
+.downloadLogo .app p:nth-child(3){
+    font-size: 16px;
+    color: #4A4A4A;
+    padding-top: 15px;
+}
+.downloadLogo .app p:nth-child(4){
+    font-size: 24px;
+    color: #FA3F32;
+}
+.downloadLogo .app .close{
+    font-size: 35px;
+    cursor: pointer;
+    color: #444;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+/* downloadLogo 部分结束 */
